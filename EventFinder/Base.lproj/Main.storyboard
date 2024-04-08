@@ -27,18 +27,30 @@
         <!--Liste-->
         <scene sceneID="vzf-Xr-w3a">
             <objects>
-                <viewController title="Liste" id="7nj-Ct-Xt2" sceneMemberID="viewController">
+                <viewController title="Liste" id="7nj-Ct-Xt2" customClass="ListViewController" customModule="EventFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPO-6K-9jC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGJ-SZ-rYD">
+                                <rect key="frame" x="70" y="170" width="253" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LmS-C9-cHh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="b7v-uX-Ev1"/>
+                    <connections>
+                        <outlet property="List" destination="kGJ-SZ-rYD" id="X2Y-QB-Ufk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbi-UC-nEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="-422"/>
+            <point key="canvasLocation" x="1087.7862595419847" y="-422.53521126760563"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4dl-08-Wrl">
