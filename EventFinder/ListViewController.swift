@@ -12,6 +12,8 @@ struct Event{
     var desc: String
     var address: String
     var type: Int
+    var latitude: Int
+    var longitude: Int
 }
 
 class ListViewController: UIViewController {
@@ -30,7 +32,6 @@ class ListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         readCSV()
-        List.text = events[0].name
     }
     
     func readCSV(){
@@ -48,13 +49,15 @@ class ListViewController: UIViewController {
         
         for row in rows{
             let columns = row.components(separatedBy: ",")
-            if columns.count == 4{
+            if columns.count == 6{
                 let name = columns[0]
                 let desc = columns[1]
                 let address = columns[2]
-                guard let type = Int(columns[3]) else { return }
+                let type = Int(columns[3]) ?? 0
+                let latitude = Int(columns[4]) ?? 0
+                let longitude = Int(columns[5]) ?? 0
                 
-                let event = Event(name: name, desc: desc, address: address, type: type)
+                let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude)
                 events.append(event)
             }
         }
