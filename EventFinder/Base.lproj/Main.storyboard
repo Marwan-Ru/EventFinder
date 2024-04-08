@@ -12,7 +12,7 @@
         <!--Carte-->
         <scene sceneID="i1r-ir-szI">
             <objects>
-                <viewController title="Carte" id="B1L-UB-NSE" sceneMemberID="viewController">
+                <viewController title="Carte" id="B1L-UB-NSE" customClass="MapViewController" customModule="EventFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wpL-eN-cxa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDs-lB-OdM">
-                                <rect key="frame" x="58" y="764" width="277" height="60"/>
+                                <rect key="frame" x="57" y="764" width="277" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jbq-dq-JbH">
                                     <rect key="frame" x="0.0" y="0.0" width="277" height="60"/>
@@ -54,6 +54,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Carte" image="location.circle.fill" catalog="system" id="Tr9-Mr-ETv"/>
+                    <connections>
+                        <outlet property="map" destination="Ar1-fi-9fs" id="BcB-AU-T7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZ3-kH-zfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

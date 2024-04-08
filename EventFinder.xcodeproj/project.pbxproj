@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259669C82BC43F5D006EFC37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259669C72BC43F5D006EFC37 /* MapViewController.swift */; };
 		595B6F9E2BC41EE10099E591 /* events.csv in Resources */ = {isa = PBXBuildFile; fileRef = 595B6F9D2BC41EE10099E591 /* events.csv */; };
 		595B6FA42BC424AD0099E591 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B6FA32BC424AD0099E591 /* ListViewController.swift */; };
 		59B2AE1A2BBC354900A6D4C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2AE192BBC354900A6D4C5 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259669C72BC43F5D006EFC37 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		595B6F9D2BC41EE10099E591 /* events.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
 		595B6FA32BC424AD0099E591 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		59B2AE162BBC354900A6D4C5 /* EventFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				59B2AE1D2BBC354900A6D4C5 /* ViewController.swift */,
 				595B6FA32BC424AD0099E591 /* ListViewController.swift */,
 				59B2AE1F2BBC354900A6D4C5 /* Main.storyboard */,
+				259669C72BC43F5D006EFC37 /* MapViewController.swift */,
 				59B2AE222BBC354B00A6D4C5 /* Assets.xcassets */,
 				59B2AE242BBC354B00A6D4C5 /* LaunchScreen.storyboard */,
 				59B2AE272BBC354B00A6D4C5 /* Info.plist */,
@@ -148,6 +151,7 @@
 				59B2AE1E2BBC354900A6D4C5 /* ViewController.swift in Sources */,
 				59B2AE1A2BBC354900A6D4C5 /* AppDelegate.swift in Sources */,
 				595B6FA42BC424AD0099E591 /* ListViewController.swift in Sources */,
+				259669C82BC43F5D006EFC37 /* MapViewController.swift in Sources */,
 				59B2AE1C2BBC354900A6D4C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
