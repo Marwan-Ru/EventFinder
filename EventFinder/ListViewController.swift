@@ -7,23 +7,47 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
-
-    @IBOutlet weak var List: UILabel!
+class ListViewController: UIViewController, UITableViewDataSource {
     
-    // Liste des évenements
-    var data = ""
-    
-    //Path to the csv
-    let filepath = Bundle.main.path(forResource: "events", ofType: "csv")
+    @IBOutlet weak var list: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         readCSV() // Loads everything into the events array
+        
+        list.dataSource = self
+        list.reloadData()
     }
     
-    func readCSV(){
+    // MARK: -Tableview Implementation
+
+    //Ici on retourne le nombre de cellules que l'on veut par section, pour le moment ce seras le nombre d'évenements dans la table events
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return events.count
+    }
+
+    //Ici on gère la construction d'une cellule a l'index IndexPath.row
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
+
+        let item = events[indexPath.row]
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.desc
+
+        return cell
+    }
+    
+    
+    // MARK: -Private
+    
+    // Liste des évenements
+    private var data = ""
+    
+    //Path to the csv
+    let filepath = Bundle.main.path(forResource: "events", ofType: "csv")
+    
+    private func readCSV(){
         do {
             data = try String(contentsOfFile: filepath!)
         } catch {
