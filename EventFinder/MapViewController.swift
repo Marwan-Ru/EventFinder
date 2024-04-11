@@ -29,13 +29,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         manager.delegate = self
         manager.startUpdatingLocation()
         
-        // Test ajout de marqueur
-        let annotation = MKPointAnnotation()
-        annotation.coordinate.latitude = events[0].latitude
-        annotation.coordinate.longitude = events[0].longitude
-        annotation.title = events[0].name
-        map.addAnnotation(annotation)
+        for event in events {
+            let annotation = MKPointAnnotation()
+            annotation.title = event.name
+            annotation.coordinate = CLLocationCoordinate2D(latitude: event.latitude, longitude: event.longitude)
+            
+            map.addAnnotation(annotation)
+        }
+
     }
+
+
     
     
     
