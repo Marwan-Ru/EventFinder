@@ -15,11 +15,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
+        /*if let location = locations.first {
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             //map.setRegion(region, animated: true)
-        }
+        }*/
     }
     
     override func viewDidLoad() {
