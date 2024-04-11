@@ -7,21 +7,11 @@
 
 import UIKit
 
-struct Event{
-    var name: String
-    var desc: String
-    var address: String
-    var type: Int
-    var latitude: Int
-    var longitude: Int
-}
-
 class ListViewController: UIViewController {
 
     @IBOutlet weak var List: UILabel!
     
     // Liste des évenements
-    var events = [Event]()
     var data = ""
     
     //Path to the csv
@@ -30,8 +20,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        readCSV()
+        readCSV() // Loads everything into the events array
     }
     
     func readCSV(){
@@ -54,14 +43,14 @@ class ListViewController: UIViewController {
                 let desc = columns[1]
                 let address = columns[2]
                 let type = Int(columns[3]) ?? 0
-                let latitude = Int(columns[4]) ?? 0
-                let longitude = Int(columns[5]) ?? 0
+                let latitude = Double(columns[4]) ?? 0
+                let longitude = Double(columns[5]) ?? 0
                 
                 let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude)
                 events.append(event)
             }
         }
-    }
+        }
 
     /*
     // MARK: - Navigation
