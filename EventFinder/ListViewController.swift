@@ -29,11 +29,13 @@ class ListViewController: UIViewController, UITableViewDataSource {
 
     //Ici on gère la construction d'une cellule a l'index IndexPath.row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventTableViewCell else {
+            return UITableViewCell()
+        }
 
-        let item = events[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = item.desc
+        let event = events[indexPath.row]
+        
+        cell.configure(withIcon: "EventFinder-icon", title: event.name, subtitle: event.desc)
 
         return cell
     }
