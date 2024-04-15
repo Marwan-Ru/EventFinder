@@ -44,6 +44,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             annotation.title = event.name
             annotation.coordinate = CLLocationCoordinate2D(latitude: event.latitude, longitude: event.longitude)
             annotation.type = event.type
+            annotation.subtitle = event.desc
             map.addAnnotation(annotation)
         }
     }
