@@ -18,13 +18,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     @IBOutlet weak var map: MKMapView!
     let manager = CLLocationManager()
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        /*if let location = locations.first {
+    /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
-            //map.setRegion(region, animated: true)
-        }*/
-    }
+            map.setRegion(region, animated: true)
+        }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,12 +63,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
            
             // Définir la couleur du pointeur en fonction du type
             switch customAnnotation.type {
+                //#colorLiteral
             case 1:
-                annotationView?.markerTintColor = .red
+                annotationView?.markerTintColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
             case 2:
-                annotationView?.markerTintColor = .green
+                annotationView?.markerTintColor = #colorLiteral(red: 0.1264312863, green: 0.7845105529, blue: 0, alpha: 1)
             case 3:
-                annotationView?.markerTintColor = .blue
+                annotationView?.markerTintColor = #colorLiteral(red: 0.1819998324, green: 0.2313539386, blue: 0.7287663817, alpha: 1)
             default:
                 annotationView?.markerTintColor = #colorLiteral(red: 0, green: 0.1121444181, blue: 0.1947939992, alpha: 1)
             }
