@@ -22,9 +22,12 @@ class EventTableViewCell: UITableViewCell {
         
         // addShadow()
         
+        // Border of the whiteView
         whiteView.layer.borderWidth = 1
-        whiteView.layer.borderColor = UIColor.gray.cgColor
-        whiteView.layer.cornerRadius = 10
+        whiteView.layer.borderColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 0.6).cgColor
+        whiteView.layer.cornerRadius = 5
+        
+        
     }
     
     private func addShadow() {
