@@ -20,7 +20,11 @@ class EventTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        addShadow()
+        // addShadow()
+        
+        whiteView.layer.borderWidth = 1
+        whiteView.layer.borderColor = UIColor.gray.cgColor
+        whiteView.layer.cornerRadius = 10
     }
     
     private func addShadow() {
