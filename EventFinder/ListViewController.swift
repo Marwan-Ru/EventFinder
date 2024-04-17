@@ -83,7 +83,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         for row in rows{
             let columns = row.components(separatedBy: ",")
-            if columns.count == 6{
+            if columns.count == 7 {
                 let name = columns[0]
                 let desc = columns[1]
                 let address = columns[2]
@@ -91,7 +91,21 @@ class ListViewController: UIViewController, UITableViewDataSource {
                 let latitude = Double(columns[4]) ?? 0
                 let longitude = Double(columns[5]) ?? 0
                 
-                let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude)
+                // Gestion de la date
+                var date = DateComponents()
+                date.calendar = Calendar.current
+                let datentime = columns[6].components(separatedBy: " ") // On sépare la date et l'heure
+                let d = datentime[0].components(separatedBy: "-") // On sépare les éléments de la date
+                let t = datentime[1].components(separatedBy: ":") // On sépare les éléments de l'heure
+                date.year = Int(d[0])
+                date.month = Int(d[1])
+                date.year = Int(d[2])
+                date.hour = Int(t[0])
+                date.minute = Int(t[1])
+                date.second = Int(t[2])
+                // Fin de la gestion de la date
+                
+                let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude, date: date)
                 events.append(event)
             }
         }
