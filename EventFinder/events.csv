@@ -1,7 +1,31 @@
 name,desc,address,type,latitude,longitude
-Soirée,grosse soirée chez moi les poto,91 rue marius berliet,1,45.7410661,4.8634700
-Privé chez momo,petite soirée privée,77 Rue Turenne,1,45.7563674,4.8431179
-Grosse Cuite,On va se tuer,241 Av. Général de Gaulle,1,45.7305661,4.9183033
-Picnic,petit picnic,5 Rue des Estrées,2,45.7612636,4.8278416
-Paella,ay caramba,22 rue des alambix,2,46.1139857,5.9684703
-Student Night,Tournée des Bar,2 Place Antonin Jutard,3,45.7562124,4.8410478
+
+Harmonies du Vieux Lyon,Quintette classique en soirée.,2 Rue Saint-Jean 69005 Lyon,1,45.76445437006867,4.828429626371601
+Soul de Saône,Groove et soul au bord de l’eau.,Quai des Célestin 69002 Lyon,1,45.76024007327429,4.830535897536143
+Rock en Ruines,Concert rock historique.,Théâtre antique de Fourvière 69005 Lyon,1,45.75996525534462,4.819692295406616
+Opéra Électronique,Fusion opéra et techno.,Opéra de Lyon 69001 Lyon,1,45.76795756847659,4.836247368701154
+Chorale des Lumières,Chants choraux illuminés.,Basilique Notre-Dame de Fourvière 69005 Lyon,1,45.762479345901,4.821972809748119
+
+Gala Renaissance,Soirée costumée d’époque.,Musée Gadagne 69005 Lyon,2,45.76406952281743,4.8275130064246055
+Nocturne Hip-Hop,Battles et DJ sets.,Halle Tony Garnier 69007 Lyon,2,45.73135717237869,4.825569557198936
+Bal Tango Lyonnais,Passion du tango argentin.,Place des Jacobins 69002 Lyon,2,45.76067235718269,4.833607247536091
+Fantasia Arabe,Nuit orientale enchantée.,Institut Lumière 69008 Lyon,2,45.74540602290295,4.869674168700198
+Soirée Salsa Caliente,Rythmes latinos endiablés.,Péniche Loupika Quai Rambaud 69002 Lyon,2,45.736857671216285,4.814598084041059
+
+Lyon en Miniature,Maquettes et dioramas de la ville.,Musée Miniature et Cinéma 69005 Lyon,3,45.762033153348796,4.827336668700874
+Avant-Garde sur Toile,Peintures contemporaines.,Musée d’Art Contemporain 69006 Lyon,3,45.784421188372605,4.852130320015294
+Sculptures en Liberté,Expo en plein air.,Parc de la Tête d’Or 69006 Lyon,3,45.776553809624126,4.8519828835321075
+L’Âge du Verre,Artisanat verrier moderne.,La Sucrière 69002 Lyon,3,45.737784045375925,4.815104639864606
+Impressions de Soie,Histoire de la soierie lyonnaise.,Maison des Canuts 69004 Lyon,3,45.77720576205115,4.833605866854481
+
+Lyon Urban Trail,Course à travers la ville.,Montée de la Grande Côte 69001 Lyon,4,45.77120416020009,4.831645012877762
+Regatta Rhône,Compétition d’aviron.,Berges du Rhône 69006 Lyon,4,45.739064047723865,4.825127829954166
+Marathon des Gourmets,Course et dégustations.,Place Antonin Poncet 69002 Lyon,4,45.756644240497046,4.834575926371275
+Tournoi des Champions,Événement d’arts martiaux.,Palais des Sports de Gerland 69007 Lyon,4,45.72464610646853,4.828775388940538
+Festival de Pétanque,Tournoi convivial.,Place Bellecour 69002 Lyon,4,45.7580212163455,4.831593015377092
+
+Fête Médiévale de Fourvière,Voyage dans le temps.,Montée du Gourguillon 69005 Lyon,5,45.758530433931114,4.82399222637136
+Salon du Chocolat Lyonnais,Douceurs et démonstrations.,Cité Internationale 69006 Lyon,5,45.77463149679317,4.848187390500026
+Lyon Geek Show,Culture pop et jeux.,Eurexpo 69680 Chassieu,5,45.730850701185446,4.949640553205932
+Biennale de la Danse,Spectacles et ateliers.,Place de la Comédie 69001 Lyon,5,45.76792938902673,4.835933666854106
+Festival du Livre Jeunesse,Lectures et animations.,Parc de la Tête d’Or 69006 Lyon,5,45.77553988541782,4.855833466968705

@@ -61,17 +61,27 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 annotationView?.annotation = annotation
             }
            
-            // Définir la couleur du pointeur en fonction du type
+            /*  Définir la couleur du pointeur en fonction du type
+                type 1 (violet) : Concert
+                type 2 (rouge) : Soirée
+                type 3 (bleu) : Exposition
+                type 4 (orange) : Sport
+                type 5 (vert) : Autre
+             */
             switch customAnnotation.type {
                 //#colorLiteral
-            case 1:
-                annotationView?.markerTintColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
-            case 2:
-                annotationView?.markerTintColor = #colorLiteral(red: 0.1264312863, green: 0.7845105529, blue: 0, alpha: 1)
-            case 3:
-                annotationView?.markerTintColor = #colorLiteral(red: 0.1819998324, green: 0.2313539386, blue: 0.7287663817, alpha: 1)
-            default:
-                annotationView?.markerTintColor = #colorLiteral(red: 0, green: 0.1121444181, blue: 0.1947939992, alpha: 1)
+                case 1:
+                    annotationView?.markerTintColor = #colorLiteral(red: 0.6636011004, green: 0.3285141885, blue: 0.9494089484, alpha: 1)
+                case 2:
+                    annotationView?.markerTintColor = #colorLiteral(red: 0.8455730081, green: 0, blue: 0, alpha: 1)
+                case 3:
+                    annotationView?.markerTintColor = #colorLiteral(red: 0.1819998324, green: 0.2313539386, blue: 0.7287663817, alpha: 1)
+                case 4:
+                    annotationView?.markerTintColor = #colorLiteral(red: 0.934452951, green: 0.3894364238, blue: 0, alpha: 1)
+                case 5:
+                    annotationView?.markerTintColor = #colorLiteral(red: 0, green: 0.7846129537, blue: 0, alpha: 1)
+                default :
+                    annotationView?.markerTintColor = #colorLiteral(red: 0, green: 0.7846129537, blue: 0, alpha: 1)
             }
            
             return annotationView
