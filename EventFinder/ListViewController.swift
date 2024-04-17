@@ -34,8 +34,27 @@ class ListViewController: UIViewController, UITableViewDataSource {
         }
 
         let event = events[indexPath.row]
+        var icon : String
         
-        cell.configure(withIcon: "EventFinder-icon", title: event.name, subtitle: event.desc)
+        // Ici on défini l'icone à utiliser pour afficher l'évenement
+        switch event.type {
+            case 1 :
+                icon = "cle-de-sol"
+                break
+            case 2 :
+                icon = "bouteille-de-biere"
+                break
+            case 3 :
+                icon = "musee"
+                break
+            case 4 :
+                icon = "sports"
+                break
+            default:
+                icon = "boite-ouverte"
+        }
+        
+        cell.configure(withIcon: icon, title: event.name, subtitle: event.desc)
 
         return cell
     }
