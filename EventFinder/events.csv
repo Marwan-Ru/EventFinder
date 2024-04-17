@@ -1,31 +1,86 @@
-name,desc,address,type,latitude,longitude
+name,desc,address,type,latitude,longitude,date
 
-Harmonies du Vieux Lyon,Quintette classique en soirée.,2 Rue Saint-Jean 69005 Lyon,1,45.76445437006867,4.828429626371601
-Soul de Saône,Groove et soul au bord de l’eau.,Quai des Célestin 69002 Lyon,1,45.76024007327429,4.830535897536143
-Rock en Ruines,Concert rock historique.,Théâtre antique de Fourvière 69005 Lyon,1,45.75996525534462,4.819692295406616
-Opéra Électronique,Fusion opéra et techno.,Opéra de Lyon 69001 Lyon,1,45.76795756847659,4.836247368701154
-Chorale des Lumières,Chants choraux illuminés.,Basilique Notre-Dame de Fourvière 69005 Lyon,1,45.762479345901,4.821972809748119
+Éclats Baroques,Concert de musique baroque.,5 Place Saint-Paul 69005 Lyon,1,45.765261,4.827128,2024-05-15 20:00:00
+Lumière sur le Rhône,Projection de films indépendants.,Quai de Bondy 69005 Lyon,2,45.767750,4.827195,2024-06-10 21:30:00
+Abstraction Lyonnaise,Expo d'art moderne.,3 Rue de la Martinière 69001 Lyon,3,45.767299,4.834329,2024-07-20 18:00:00
+La Ronde de Lyon,Course cycliste nocturne.,Parc de Parilly 69500 Bron,4,45.723291,4.913842,2024-08-25 22:00:00
+Brocante des Arts,Marché d'art et d'antiquités.,Place Carnot 69002 Lyon,5,45.748050,4.826776,2024-09-17 09:00:00
+Nuits de Fourvière,Concerts en plein air.,17 Rue Cléberg 69005 Lyon,1,45.762617,4.821111,2024-05-21 19:30:00
+Soirée Bateau Jazz,Jazz live sur une péniche.,Quai Rambaud 69002 Lyon,2,45.746917,4.818775,2024-06-18 20:00:00
+Regards Croisés,Expo photo internationale.,8 Quai Perrache 69002 Lyon,3,45.733120,4.815752,2024-07-11 17:00:00
+Olympiades Urbaines,Compétition multisports.,10 Rue des Sports 69008 Lyon,4,45.735409,4.869218,2024-08-03 10:00:00
+Fête du Printemps,Célébration florale et artisanale.,Parc de la Tête d'Or 69006 Lyon,5,45.777222,4.855278,2024-09-05 11:00:00
+Accordéon sur Saône,Concert d'accordéon traditionnel.,Quai Saint-Vincent 69001 Lyon,1,45.770610,4.835630,2024-05-27 18:30:00
+Nocturne Électro,Soirée DJ en extérieur.,Place des Terreaux 69001 Lyon,2,45.767750,4.833540,2024-06-22 23:00:00
+Sculptures en Scène,Expo de sculptures contemporaines.,4 Place des Jacobins 69002 Lyon,3,45.758888,4.834722,2024-07-18 16:00:00
+Défi de la Colline,Course à pieds dans les pentes.,Montée de la Grande Côte 69001 Lyon,4,45.771949,4.832119,2024-08-08 09:00:00
+Salon du Vintage,Expo et vente d'objets rétro.,La Sucrière 69002 Lyon,5,45.746917,4.818775,2024-09-12 10:00:00
+Voix du Vieux Lyon,Chorale historique.,6 Rue Saint-Jean 69005 Lyon,1,45.762049,4.827128,2024-05-30 20:30:00
+Nuit des Feux,Festival de pyrotechnie.,Quai Fulchiron 69005 Lyon,2,45.757814,4.832011,2024-06-29 22:00:00
+Horizons Lointains,Expo d'art ethnique.,2 Rue Edouard Herriot 69001 Lyon,3,45.767522,4.833656,2024-07-24 19:00:00
+Lyon Kayak Fest,Régate de kayak sur le Rhône.,Berges du Rhône 69006 Lyon,4,45.760210,4.850340,2024-08-14 14:00:00
+Carnaval des Saveurs,Festival gastronomique.,Place de la République 69002 Lyon,5,45.764026,4.835707,2024-09-19 12:00:00
+Jazz en Fête,Concerts de jazz festifs.,1 Place Gensoul 69002 Lyon,1,45.753899,4.833190,2024-06-05 19:00:00
+Soirée Fantastique,Événement cosplay et fantasy.,14 Rue Palais Grillet 69002 Lyon,2,45.762617,4.827067,2024-07-02 20:00:00
+L'Art du Verre,Expo de verrerie artistique.,7 Rue de la Charité 69002 Lyon,3,45.750339,4.841775,2024-07-29 18:00:00
+Triathlon de Lyon,Épreuves sportives enchaînées.,Parc de Gerland 69007 Lyon,4,45.723291,4.825842,2024-08-17 07:00:00
+Les Puces Musicales,Marché de musique et vinyles.,Place Voltaire 69003 Lyon,5,45.760339,4.862659,2024-09-22 10:00:00
+Classique sous les Étoiles,Concert de musique classique.,Place des Minimes 69005 Lyon,1,45.758888,4.821111,2024-06-09 21:00:00
+Electro Dock,Soirée électro au port.,Port Edouard Herriot 69007 Lyon,2,45.723291,4.818775,2024-07-06 23:30:00
+Expo Vintage Auto,Exposition de voitures anciennes.,Place du Maréchal Lyautey 69006 Lyon,3,45.767750,4.850340,2024-08-01 10:00:00
+Run & Fun Lyon,Course ludique colorée.,Parc de Miribel-Jonage 69120 Vaulx-en-Velin,4,45.795310,4.896122,2024-08-21 09:30:00
+Festival du Jeu,Événement ludique et familial.,Place de la Bourse 69002 Lyon,5,45.765261,4.835659,2024-09-26 11:00:00
+Opéra de Rue,Performances lyriques urbaines.,Place des Terreaux 69001 Lyon,1,45.767750,4.833540,2024-06-13 20:00:00
+Nuit des DJ,Compétition de DJ.,Halle Tony Garnier 69007 Lyon,2,45.735409,4.818775,2024-07-09 22:00:00
+Gravures et Dessins,Expo d'œuvres sur papier.,Musée des Beaux-Arts 69001 Lyon,3,45.767299,4.833656,2024-08-04 15:00:00
+Lyon Roller Open,Compétition de roller.,Quai Claude Bernard 69007 Lyon,4,45.746917,4.841775,2024-08-24 14:00:00
+Salon de l'Écriture,Ateliers d'écriture et lectures.,Bibliothèque de la Part-Dieu 69003 Lyon,5,45.760210,4.859340,2024-09-30 14:00:00
+Harmonie des Quartiers,Concerts de musique du monde.,Place Voltaire 69003 Lyon,1,45.760339,4.862659,2024-06-16 19:00:00
+Soirée Électro-Tech,Événement techno et house.,La Sucrière 69002 Lyon,2,45.746917,4.818775,2024-07-13 23:00:00
+Gravure Contemporaine,Expo d'estampes modernes.,Palais Saint-Pierre 69001 Lyon,3,45.767750,4.833540,2024-08-07 17:00:00
 
-Gala Renaissance,Soirée costumée d’époque.,Musée Gadagne 69005 Lyon,2,45.76406952281743,4.8275130064246055
-Nocturne Hip-Hop,Battles et DJ sets.,Halle Tony Garnier 69007 Lyon,2,45.73135717237869,4.825569557198936
-Bal Tango Lyonnais,Passion du tango argentin.,Place des Jacobins 69002 Lyon,2,45.76067235718269,4.833607247536091
-Fantasia Arabe,Nuit orientale enchantée.,Institut Lumière 69008 Lyon,2,45.74540602290295,4.869674168700198
-Soirée Salsa Caliente,Rythmes latinos endiablés.,Péniche Loupika Quai Rambaud 69002 Lyon,2,45.736857671216285,4.814598084041059
-
-Lyon en Miniature,Maquettes et dioramas de la ville.,Musée Miniature et Cinéma 69005 Lyon,3,45.762033153348796,4.827336668700874
-Avant-Garde sur Toile,Peintures contemporaines.,Musée d’Art Contemporain 69006 Lyon,3,45.784421188372605,4.852130320015294
-Sculptures en Liberté,Expo en plein air.,Parc de la Tête d’Or 69006 Lyon,3,45.776553809624126,4.8519828835321075
-L’Âge du Verre,Artisanat verrier moderne.,La Sucrière 69002 Lyon,3,45.737784045375925,4.815104639864606
-Impressions de Soie,Histoire de la soierie lyonnaise.,Maison des Canuts 69004 Lyon,3,45.77720576205115,4.833605866854481
-
-Lyon Urban Trail,Course à travers la ville.,Montée de la Grande Côte 69001 Lyon,4,45.77120416020009,4.831645012877762
-Regatta Rhône,Compétition d’aviron.,Berges du Rhône 69006 Lyon,4,45.739064047723865,4.825127829954166
-Marathon des Gourmets,Course et dégustations.,Place Antonin Poncet 69002 Lyon,4,45.756644240497046,4.834575926371275
-Tournoi des Champions,Événement d’arts martiaux.,Palais des Sports de Gerland 69007 Lyon,4,45.72464610646853,4.828775388940538
-Festival de Pétanque,Tournoi convivial.,Place Bellecour 69002 Lyon,4,45.7580212163455,4.831593015377092
-
-Fête Médiévale de Fourvière,Voyage dans le temps.,Montée du Gourguillon 69005 Lyon,5,45.758530433931114,4.82399222637136
-Salon du Chocolat Lyonnais,Douceurs et démonstrations.,Cité Internationale 69006 Lyon,5,45.77463149679317,4.848187390500026
-Lyon Geek Show,Culture pop et jeux.,Eurexpo 69680 Chassieu,5,45.730850701185446,4.949640553205932
-Biennale de la Danse,Spectacles et ateliers.,Place de la Comédie 69001 Lyon,5,45.76792938902673,4.835933666854106
-Festival du Livre Jeunesse,Lectures et animations.,Parc de la Tête d’Or 69006 Lyon,5,45.77553988541782,4.855833466968705
+Mélodies de Montmartre,Concert de jazz manouche,Place du Tertre 75018 Paris,1,48.886703,2.343104,2024-10-07 19:00:00
+Soirée Étoilée à Nice,Soirée glamour sur la plage,Promenade des Anglais 06000 Nice,2,43.695036,7.265592,2024-11-09 20:00:00
+Reflets d'Art à Bordeaux,Exposition d'art contemporain,Place de la Bourse 33000 Bordeaux,3,44.841225,-0.573612,2024-12-17 18:00:00
+Marathon de la Côte d'Azur,Course le long de la mer,Avenue de la Californie 06200 Nice,4,43.688492,7.220546,2025-01-22 09:00:00
+Festival du Livre à Strasbourg,Foire du livre et signatures,Place Kléber 67000 Strasbourg,5,48.583148,7.747882,2025-02-14 10:00:00
+Accords Classiques à Lille,Concert symphonique,Place du Théâtre 59800 Lille,1,50.637183,3.063017,2024-10-14 19:30:00
+Nuits Blanches à Marseille,Soirée artistique et culturelle,Vieux-Port 13001 Marseille,2,43.296482,5.369780,2024-11-16 21:00:00
+Vision Moderne à Toulouse,Exposition d'installations interactives,Place du Capitole 31000 Toulouse,3,43.604462,1.444247,2024-12-20 17:00:00
+Triathlon de Bretagne,Épreuves sportives en nature,Plage de la Baule 44500 La Baule-Escoublac,4,47.289497,-2.393186,2025-01-28 08:00:00
+Salon de la Gastronomie à Lyon,Dégustations et ateliers culinaires,Les Halles de Lyon Paul Bocuse 69003 Lyon,5,45.760339,4.835659,2025-02-18 11:00:00
+Harmonies Aquatiques,Concert classique au bord de l'eau.,Quai de la Daurade 31000 Toulouse,1,43.600000,1.433333,2024-10-01 20:00:00
+Nuit des Poètes,Soirée poésie et musique.,Rue de la Poésie 75004 Paris,2,48.853410,2.348800,2024-11-05 19:30:00
+Couleurs d'Automne,Exposition de peinture saisonnière.,Jardin des Plantes 38000 Grenoble,3,45.188529,5.724524,2024-12-10 17:00:00
+Défi des Alpes,Course de trail en montagne.,Chemin de l'Alpe 74000 Annecy,4,45.899247,6.129384,2025-01-15 08:00:00
+Festival du Chocolat,Salon gourmand et ateliers.,Place de la Victoire 33000 Bordeaux,5,44.837789,-0.579180,2025-02-20 10:00:00
+Résonance Lyrique,Concert d'opéra en plein air.,Place de l'Opéra 06000 Nice,1,43.700936,7.268391,2024-10-08 20:30:00
+Soirée ElectroPop,Concert de musique électronique.,Parc Expo 34000 Montpellier,2,43.610769,3.876716,2024-11-12 22:00:00
+L'Art en Mouvement,Exposition interactive.,Parc de la Villette 75019 Paris,3,48.890996,2.386702,2024-12-18 18:00:00
+Marathon de Provence,Course à travers les champs de lavande.,Route de Valensole 04210 Valensole,4,43.837425,5.983096,2025-01-22 09:00:00
+Salon des Jeux Vidéo,Événement gaming et compétitions.,Palais des Festivals 06400 Cannes,5,43.551503,7.012582,2025-02-25 11:00:00
+Festival des Couleurs,Arts de rue colorés.,14 Rue des Arts 75004 Paris,1,48.856614,2.3522219,2024-05-21 18:00:00
+Nuit du Jazz,Jazz live et ambiance lounge.,3 Quai Saint-Bernard 75005 Paris,1,48.8462217,2.3556761,2024-06-12 20:00:00
+Classique au Palais,Concert classique au Palais Garnier.,8 Rue Scribe 75009 Paris,1,48.8719341,2.3318373,2024-07-03 19:30:00
+Écho du Rock,Festival rock en plein air.,Parc de Belleville 75020 Paris,1,48.8701789,2.3846943,2024-07-24 17:00:00
+Accords Parfaits,Harmonies classiques en église.,15 Rue du Temple 75004 Paris,1,48.8588443,2.3522219,2024-08-14 21:00:00
+Balade Lyrique,Opéra mobile dans les rues de Paris.,Île de la Cité 75001 Paris,1,48.8566969,2.3514616,2024-09-04 20:00:00
+Symphonie Urbaine,Concert symphonique moderne.,Place de la Bastille 75011 Paris,1,48.8534102,2.3697897,2024-09-25 19:00:00
+Jazz en Seine,Croisière musicale jazz sur la Seine.,Port de la Bourdonnais 75007 Paris,1,48.860392,2.3126277,2024-10-16 20:30:00
+Nuits Électriques,Soirées DJ en rooftop.,55 Quai de Grenelle 75015 Paris,2,48.851892,2.2862031,2024-11-06 22:00:00
+Soirée Salsa,Soirée dansante latino.,30 Rue du Faubourg Saint-Antoine 75012 Paris,2,48.8504333,2.3789784,2024-11-27 20:00:00
+Harmonie Nantaise,Concert de musique classique.,Place Royale 44000 Nantes,1,47.218371,-1.553621,2024-05-10 20:00:00
+Étoiles de Strasbourg,Soirée astronomie et contes.,Parc de l'Orangerie 67000 Strasbourg,2,48.584614,7.750712,2024-06-15 21:30:00
+Reflets de Marseille,Exposition d'art contemporain.,Vieux-Port 13001 Marseille,3,43.296482,5.36978,2024-07-20 19:00:00
+Course des Lumières,Lyon by night run.,Place Bellecour 69002 Lyon,4,45.757814,4.832011,2024-08-25 22:00:00
+Festival du Livre,Lectures et dédicaces.,Place de la Comédie 33000 Bordeaux,5,44.837789,-0.57918,2024-09-30 10:00:00
+Jazz à Montpellier,Concerts de jazz en plein air.,Place de la Comédie 34000 Montpellier,1,43.610769,3.876716,2024-10-05 20:00:00
+Nuit Électronique,Toulouse club night.,Place du Capitole 31000 Toulouse,2,43.604652,1.444209,2024-11-08 23:00:00
+Lille Art Expo,Exposition d'art moderne.,Grand Place 59000 Lille,3,50.637183,3.063017,2024-12-13 18:00:00
+Marathon de Rennes,Course à travers la ville.,Place de la Mairie 35000 Rennes,4,48.11198,-1.67429,2025-01-18 09:00:00
+Salon de la Gastronomie,Dégustations à Dijon.,Place de la Libération 21000 Dijon,5,47.322047,5.04148,2025-02-22 11:00:00
+Classique en Provence,Concert en plein air.,Cours Mirabeau 13100 Aix-en-Provence,1,43.529742,5.447427,2024-05-15 19:30:00
+Soirée Disco à Cannes,Nuit discothèque.,Boulevard de la Croisette 06400 Cannes,2,43.551503,7.012582,2024-06-20 22:00:00
+Expo Photo à Nice,Photographies de la Côte d'Azur.,Promenade des Anglais 06000 Nice,3,43.695036,7.265592,2024-07-25 17:00:00
+Triathlon de Grenoble,Épreuves sportives.,Quai Perrière 38000 Grenoble,4,45.194276,5.731672,2024-08-30 08:00:00
+Foire du Livre à Nancy,Littérature et rencontres.,Place Stanislas 54000 Nancy,5,48.692054,6.184417,2024-10-10 10:00:00

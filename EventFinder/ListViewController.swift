@@ -83,7 +83,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         for row in rows{
             let columns = row.components(separatedBy: ",")
-            if columns.count == 6{
+            if columns.count == 7{
                 let name = columns[0]
                 let desc = columns[1]
                 let address = columns[2]
