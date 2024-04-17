@@ -9,6 +9,8 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var iconView: UIImageView!
+    
     @IBOutlet weak var whiteView: UIView!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -44,7 +46,7 @@ class EventTableViewCell: UITableViewCell {
 
     func configure(withIcon icon: String, title: String, subtitle: String) {
 
-       //iconView.image = UIImage(named: icon)
+       iconView.image = UIImage(named: icon)
 
        titleLabel.text = title
 
