@@ -63,11 +63,15 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
                 icon = "boite-ouverte"
         }
         
+        // On formatte la date pour l'afficher
         let date = Calendar.current.date(from: event.date)
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy"
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        formatter.locale = Locale(identifier: "fr_FR")
+        let dateStr = formatter.string(from: date!)
         
-        cell.configure(withIcon: icon, title: event.name, subtitle: event.desc, date: formatter.string(from: date!))
+        cell.configure(withIcon: icon, title: event.name, date: dateStr)
 
         return cell
     }
@@ -81,6 +85,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
             return item.name.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
         
+        sortByDate(ascending: true)
         list.reloadData()
     }
     

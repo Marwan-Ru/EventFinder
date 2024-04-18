@@ -100,7 +100,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-c1-Vgt">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="184.33333333333334" height="64"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="64"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sports" translatesAutoresizingMaskIntoConstraints="NO" id="R3X-cW-gMf">
                                                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
@@ -122,12 +122,6 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw8-0J-hZz">
-                                                                            <rect key="frame" x="143" y="0.0" width="41.333333333333343" height="64"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
@@ -140,7 +134,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="dateLabel" destination="Bw8-0J-hZz" id="5MS-1w-PVa"/>
                                             <outlet property="iconView" destination="R3X-cW-gMf" id="s4T-t7-iiy"/>
                                             <outlet property="subtitleLabel" destination="KPb-ef-Ru5" id="Ein-cQ-Hhf"/>
                                             <outlet property="titleLabel" destination="Vs1-CI-CMI" id="wki-vt-vFu"/>
