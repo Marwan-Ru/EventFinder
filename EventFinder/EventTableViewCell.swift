@@ -17,6 +17,7 @@ class EventTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subtitleLabel: UILabel!
     
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,13 +45,15 @@ class EventTableViewCell: UITableViewCell {
  
     }
 
-    func configure(withIcon icon: String, title: String, subtitle: String) {
+    func configure(withIcon icon: String, title: String, subtitle: String, date: String) {
 
        iconView.image = UIImage(named: icon)
 
        titleLabel.text = title
 
        subtitleLabel.text = subtitle
+       
+       dateLabel.text = date
 
     }
 
