@@ -88,8 +88,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
     
     // Ici on gère ce qu'il se passe quand on clique sur un élément de la liste
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("ICI")
-        
+    
         let selectedEvent = filteredEvents[indexPath.row]
         titleLabel.text = selectedEvent.name
         descLabel.text = selectedEvent.desc
