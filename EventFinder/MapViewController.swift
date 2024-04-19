@@ -9,51 +9,61 @@ import UIKit
 import MapKit
 import CoreLocation
 
+/**
+ * Modification de la classe MKPointAnnotation pour pouvoir ajouter le type d'event
+ */
 class CustomPointAnnotation: MKPointAnnotation {
     var type: Int?
 }
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
+    //Outlet vers notre carte interactive
     @IBOutlet weak var map: MKMapView!
     let manager = CLLocationManager()
     
-    /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-            let region = MKCoordinateRegion(center: location.coordinate, span: span)
-            map.setRegion(region, animated: true)
-        }
-    }*/
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //initialisation du location manager
         manager.requestWhenInUseAuthorization()
         manager.delegate = self
         manager.startUpdatingLocation()
         
         map.delegate = self
         
+        //appelle de la fonction pour ajouter les marqueurs sur la carte
         addInitialPin()
     }
     
+    /**
+     * Ajout de tout les marqueurs d'évènements sur la carte
+     */
     private func addInitialPin(){
+        //parcour de la liste d'évènement
         for event in events {
+            //utilisation de notre classe modifié
             let annotation = CustomPointAnnotation()
+            //ajout des caractéristiques du marqueur
             annotation.title = event.name
             annotation.coordinate = CLLocationCoordinate2D(latitude: event.latitude, longitude: event.longitude)
             annotation.type = event.type
             annotation.subtitle = event.desc
+            //création du marqueur sur la carte
             map.addAnnotation(annotation)
         }
     }
     
+    /**
+     * Modification des marqueurs de la carte pour leur donner une couleur par type
+     */
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        //verification que annotation est bien du type CustomPointAnnotation
         if let customAnnotation = annotation as? CustomPointAnnotation {
             let annotationIdentifier = "CustomPin"
             var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) as? MKMarkerAnnotationView
            
+            //on vérifie que annotationView existe
             if annotationView == nil {
                 annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
                 annotationView?.canShowCallout = true
@@ -69,7 +79,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 type 5 (vert) : Autre
              */
             switch customAnnotation.type {
-                //#colorLiteral
+                //Selon le type on met la couleur correspondante
                 case 1:
                     annotationView?.markerTintColor = #colorLiteral(red: 0.6636011004, green: 0.3285141885, blue: 0.9494089484, alpha: 1)
                 case 2:
@@ -83,7 +93,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 default :
                     annotationView?.markerTintColor = #colorLiteral(red: 0, green: 0.7846129537, blue: 0, alpha: 1)
             }
-           
+            //retourne l'annotation à afficher sur la carte
             return annotationView
         }
        
