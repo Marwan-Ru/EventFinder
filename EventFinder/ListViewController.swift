@@ -7,12 +7,28 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
+class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
     
     @IBOutlet weak var list: UITableView!
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    // Outlets de la vue qui se supperpose lorsque l'on clique sur un élément de la liste
+    
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak var overlayView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBAction func exitingOverlay(_ sender: Any) { // Permet de cacher l'overlay quand on clique en dehors de la vue
+        visualEffectView.isHidden = true
+        overlayView.isHidden = true
+    }
+    
+    
+
     var filteredEvents: [Event]!
     
     override func viewDidLoad() {
@@ -21,6 +37,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
         readCSV() // Loads everything into the events array
         
         list.dataSource = self
+        list.delegate = self
         searchBar.delegate = self
         
         filteredEvents = events
@@ -62,18 +79,25 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
             default:
                 icon = "boite-ouverte"
         }
+
         
-        // On formatte la date pour l'afficher
-        let date = Calendar.current.date(from: event.date)
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .short
-        formatter.locale = Locale(identifier: "fr_FR")
-        let dateStr = formatter.string(from: date!)
-        
-        cell.configure(withIcon: icon, title: event.name, date: dateStr)
+        cell.configure(withIcon: icon, title: event.name, date: event.formatedDate)
 
         return cell
+    }
+    
+    // Ici on gère ce qu'il se passe quand on clique sur un élément de la liste
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("ICI")
+        
+        let selectedEvent = filteredEvents[indexPath.row]
+        titleLabel.text = selectedEvent.name
+        descLabel.text = selectedEvent.desc
+        addressLabel.text = selectedEvent.address
+        dateLabel.text = selectedEvent.formatedDate
+        
+        overlayView.isHidden = false
+        visualEffectView.isHidden = false
     }
     
     // MARK: -SearchBar implementation
@@ -150,7 +174,15 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
                 date.second = Int(t[2])
                 // Fin de la gestion de la date
                 
-                let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude, date: date)
+                // Formatage de la date pour l'affichage
+                let ddate = Calendar.current.date(from: date)
+                let formatter = DateFormatter()
+                formatter.dateStyle = .medium
+                formatter.timeStyle = .short
+                formatter.locale = Locale(identifier: "fr_FR")
+                let formatedDate = formatter.string(from: ddate!)
+                
+                let event = Event(name: name, desc: desc, address: address, type: type, latitude: latitude, longitude: longitude, date: date, formatedDate: formatedDate)
                 events.append(event)
             }
         }

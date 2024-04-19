@@ -15,6 +15,7 @@ struct Event{
     var latitude: Double
     var longitude: Double
     var date: DateComponents
+    var formatedDate: String
 }
 
 var events = [Event]()
